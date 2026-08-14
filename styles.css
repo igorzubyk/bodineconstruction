@@ -630,21 +630,25 @@ h1 strong { color: var(--blue); font: inherit; }
   .primary-nav ul { gap: 1rem; }
   .primary-nav a { font-size: .55rem; }
   .hero { grid-template-columns: 1fr; min-height: auto; gap: 2rem; padding-top: 2rem; }
-  h1 { font-size: clamp(3.8rem, 19vw, 6rem); }
+  .hero-copy { min-width: 0; width: 100%; }
+  h1 { max-width: none; font-size: clamp(3.05rem, 15.5vw, 4.5rem); line-height: .88; overflow-wrap: break-word; }
   .hero-image { inset: 0; width: auto; opacity: .78; }
   .hero-image img { transform: scale(.94); }
   .hero-copy { grid-column: 1; align-self: start; }
   .hero-copy > p:not(.hero-actions) { margin-top: 1.25rem; }
-  .hero-form { grid-column: 1; width: 100%; padding: 1.3rem; }
+  .hero-form { grid-column: 1; width: min(100%, 28rem); justify-self: center; padding: 1.3rem; }
   .hero-form-fields { grid-template-columns: 1fr; }
   .hero-form h2 { font-size: 2.1rem; }
   .hero-scene--brand::before { inset: 8% -54% 15% 37%; background-size: 24rem auto; opacity: .11; transform: none; }
   .services-heading { display: block; }
   .services-heading p { margin: 1rem 0 0; }
   .services-heading p:last-child { max-width: 27rem; }
+  .services h2 { font-size: clamp(3rem, 14vw, 4rem); line-height: .86; }
   .service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.6rem 1.4rem; }
   .service:nth-child(even) { margin-top: 2.8rem; }
   .service:nth-child(5) { grid-column: 1 / -1; max-width: calc(50% - .7rem); }
+  .service h3 { font-size: 1.48rem; line-height: .9; overflow-wrap: anywhere; }
+  .service h3 + p { min-height: 0; font-size: .82rem; }
   .about-heading { display: block; }
   .about-heading > p { margin-bottom: 1rem; }
   .about-layout { grid-template-columns: 1fr; }
