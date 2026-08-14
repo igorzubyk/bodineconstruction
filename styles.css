@@ -9,6 +9,13 @@
 
 * { box-sizing: border-box; }
 
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 html { scroll-behavior: smooth; background: #dce8f3; }
 
 body {
@@ -16,7 +23,6 @@ body {
   isolation: isolate;
   min-width: 20rem;
   min-height: 100vh;
-  margin: 0;
   color: var(--ink);
   background: var(--paper);
   font-family: Arial, Helvetica, sans-serif;
