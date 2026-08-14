@@ -4,7 +4,7 @@
   --blue: #0a81d1;
   --line: rgba(16, 16, 16, .22);
   --page-pad: clamp(1.25rem, 3vw, 3.5rem);
-  --hero-header-overlap: 8.8rem;
+  --hero-header-overlap: 8.2rem;
 }
 
 * { box-sizing: border-box; }
